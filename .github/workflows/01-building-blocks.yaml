@@ -9,7 +9,7 @@ jobs:
   echo-hello:
     runs-on: ubuntu-latest
     steps:
-      - name: Say hello
+      - name: Say a hello
         run: echo "Hello, world!"
   echo-goodbye:
     runs-on: ubuntu-latest
@@ -18,5 +18,5 @@ jobs:
         run: |
           echo "I will succeed"
           exit 0
-      - name: Say goodbye
+      - name: Say a goodbye
         run: echo "Goodbye!"
