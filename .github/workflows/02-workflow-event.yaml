@@ -1,6 +1,10 @@
 name: 02 - workflow - event
 
-on: push
+on: 
+  push:
+  Pull_request:
+  shedule:
+    - cron: "*/5 * * * *"  
 
 jobs:
     echo:
