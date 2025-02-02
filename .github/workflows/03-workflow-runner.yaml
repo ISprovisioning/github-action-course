@@ -1,4 +1,4 @@
-# This pipeline is to test runner
+# About different runners for github action
 name: 03 - Workflow Runners
 
 on: push
@@ -11,3 +11,12 @@ jobs:
               run: |
                 echo " This job is running on an Ubuntu runner."
                 echo " Runner OS: $RUNNER_OS"
+
+    windows-echo:
+        runs-on: windows-latest
+        steps:
+            - name: Show OS
+            shell: bash
+            run: |
+            echo " This is running on Windows Server"
+            echo "Runner OS: $RUNNER_OS"
