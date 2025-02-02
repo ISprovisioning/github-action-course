@@ -16,7 +16,7 @@ jobs:
         runs-on: windows-latest
         steps:
             - name: Show OS
-            shell: bash
-            run: |
-            echo " This is running on Windows Server"
-            echo "Runner OS: $RUNNER_OS"
+              shell: bash
+              run: |
+                echo " This is running on Windows Server"
+                echo "Runner OS: $RUNNER_OS"
